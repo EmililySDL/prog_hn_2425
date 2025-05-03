@@ -3,8 +3,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="assets/js/main.js"></script>
 		<link rel="stylesheet" href="assets/css/style.css">
 		<title>Programmation pour les humanités numériques.</title>
+		<link rel="icon" href="assets/img/pfp.png" type="image/icon type">
     </head>
 
     <body>
@@ -32,6 +34,59 @@
     <li><i>La Fortune des Rougon</i>, Emile Zola, Atramenta</li>
     <li><i>If On A Winter's Night A Traveler</i>, Italo Calvino, Harcourt Brace International</li>
 </ol>
+
+<div>
+                    <span>
+                        <label for="fileInput" class="btn"><small>Sélectionner un fichier au format .txt :</small></label>
+                        <input id="fileInput" type="file" accept="text/plain" name="Fichier (.txt)" />
+                    </span>
+                </div>
+                <br />
+                <p style="text-align:center;">
+                    <small>
+                        <label for="delimID" class="mylabel">Délimiteur(s)</label>
+                        &nbsp; <!-- commenter -->
+                        <input type="text" value=" ,;’'~|&#@=`%*$()[]{}_:+«»§\/" name="delim" id="delimID" size="40" />
+                    </small>
+                    <br />
+                    <small>
+                        <label for="poleID" class="mylabel">Pôle</label>
+                        &nbsp;
+                        <input type="text" placeholder="entrez un pôle..." name="pole" id="poleID" size="20" />
+                    </small>
+                    &nbsp;
+                    <small>
+                        <label for="lgID" class="mylabel">Longueur</label>
+                        &nbsp;
+                        <input type="text" value="10" name="lg" id="lgID" size="10" />
+                    </small>
+                    <br/>
+                    <small>
+                        <label for="stopwordID" class="mylabel">mots grammaticaux, Stopwords en anglais)</label>
+                        &nbsp;
+                        <input type="text" value="de,le,la,les,à,et,des,un,une,du,que,en,l,que,qu,d,s,se,ne,n,ce,me,sa" name="stopwords" id="stopwordID" size="60" />
+                    </small>
+                    <br />
+                    <br />
+                    <button class="special" onclick="alert('Voici un site qui permet d\'analyser des textes.');"><span>Bonjour</span></button> <!-- commenter -->
+                    <br />
+                    <br />
+                    <button onclick="segText()"><span>Segmentation</span></button>
+                    <button class="purple" id="btnDict" onclick="dictionnaire()"><span>Dictionnaire</span></button>
+					</p>
+            </div>
+            <center>
+            <div id="logger1" style="width:100%"></div>
+            <div id="logger2" style="width:100%"></div>
+            <div id="logger3" style="width:100%"></div>
+            </center>
+            <br/>
+            <div id="Global">
+                <div id="fileDisplayArea"></div>
+                <div id="page-analysis"></div>
+                <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+            </div>
+        </div>
 
 <footer>
   <p><a href="http://www.univ-paris3.fr/">Lien vers le site de Sorbonne Nouvelle.</a></p>
