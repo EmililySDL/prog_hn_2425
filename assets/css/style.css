@@ -1,0 +1,44 @@
+html {
+	font-size: 14px;
+	background-color: rgb(210 240 201);
+	width: 120vw;
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+
+h1 {
+	font-size: 4.5rem;
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+#page {
+	margin: auto;
+	width: 90%;
+	background-color: White;
+	border-width: 5px;
+	border-style: solid;
+	border-color: Silver;
+}
+
+.entete {
+	text-align: center;
+}
+
+#aboutme {
+	margin: 4px;
+	border-width: 4px;
+	border-style: solid;
+	border-color: White;
+	background-color: Silver;
+	padding: 2rem;
+}
+
+footer {
+	text-align: center;
+}
+
+table, th, td {
+	border: 1px solid;
+}
